@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta title="Get your experience done!">
+  <title>Freelance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="services">
+      Sure! Here's an example of how you can create a responsive grid of cards with images and headings using HTML and CSS:
+
+HTML:
+
+```
+<div class="card-container">
+  <div class="card">
+    <img src="image1.jpg" alt="Card Image">
+    <h3>Card Heading 1</h3>
+  </div>
+  
+  <div class="card">
+    <img src="image2.jpg" alt="Card Image">
+    <h3>Card Heading 2</h3>
+  </div>
+  
+  <!-- Add more cards here -->
+</div>
+`
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+```
+
+In this example, the `card-container` div acts as a container for the cards. It uses CSS Grid to create a responsive grid layout, where each card takes up a minimum width of 200px but expands to fill the available space when there's more room.
+
+The `card` class styles each individual card. It gives it a background color, adds some padding, and centers the content using `text-align: center`.
+
+The `card img` selector sets the width of the image to occupy the entire width of its parent container while maintaining its aspect ratio. The `card h3` selector adds some margin at the top of the heading.
+
+You can add more cards by duplicating the `<div class="card">...</div>` section inside the `card-container` div and updating the image source (`src`) and heading text for each card.
+
+Remember to replace the `image1.jpg`, `image2.jpg`, etc. with actual image URLs or file paths.
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
